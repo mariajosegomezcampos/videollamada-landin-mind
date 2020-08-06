@@ -2,21 +2,22 @@
     box-sizing: $box-model;
     margin: 0 auto;
 }
-
-@mixin  telefono() {
-   @media only screem and (min-width: #{$telefono}){
-    @content;
-   }
+/** Media Queries **/
+@mixin telefono {
+    @media only screen and (min-width: #{$telefono}) and (max-width:#{$tablet}) {
+        @content;
+    }
 }
 
-@mixin  tablet() {
-    @media only screem and (min-width: #{$tablet}){
+@mixin tablet {
+    @media only screen and (min-width: #{$tablet}) {
         @content;
-    } 
- }
- @mixin  tablet() {
-    @media only screem and (min-width: #{desktop}){
-        @content; 
-    } 
- }
+    }
+}
+  
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
 

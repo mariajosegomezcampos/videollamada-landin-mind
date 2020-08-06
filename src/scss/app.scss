@@ -21,10 +21,18 @@ html{
     background-color: $color_primario;
     color: $color_text;
 
+
+    @include telefono() {
+       
+     }
     img{
         width: 25%;
         padding: 20px;
         margin-left: -20px;
+
+        @include telefono() {
+           width: 70%;
+        }
     }
 
     h1{
@@ -35,11 +43,17 @@ html{
         margin-bottom: 15px;
         line-height: 52px;
         letter-spacing: -0.005px;
+
+        @include telefono() {
+          font-size: 30px;
+          line-height: 35px;
+         }
     }
 
     span{
         background-color: $color_secundario;
         color: $color_text_white;
+        font-family: $fuente_principal;
     }
     p{
      font-family:$fuente_principal;
@@ -48,6 +62,10 @@ html{
      font-size: 20px;
      line-height: 33px;
      letter-spacing: -0.0024px;
+     @include telefono() {
+        font-size: 15px;
+        line-height: 25px;
+     }
     }
 
 
@@ -56,18 +74,25 @@ html{
     width: 70%;
     padding: 5% 0 0 1%;
     margin-left: 8%;
+    @include telefono() {
+       width: 90%;
+    }
 }
 
 .main_container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
 
    .content_features{
     padding: 6rem 1rem;
     color: #403E3E;
     margin-left: 8%;
+    @include telefono() {
+        margin: 0 auto;
+        padding: 4rem 1rem;
+     }
 
        .title_list{
            width: 60%;
@@ -77,9 +102,16 @@ html{
            font-size: 20px;
            margin: 0;
            border-left: solid 5px $color_primario;
+           font-family: $fuente_principal;
+           @include telefono() {
+            width: 100%;
+            line-height: 30px;
+            font-size: 1rem;
+            }
 
 h2{
     padding-left: 20px;
+    font-family: $fuente_principal;
 }
 
 
@@ -104,17 +136,23 @@ h2{
     font-size: 1rem;
     line-height: 50px;
     letter-spacing: -0.0024px;
+
+    @include telefono() {
+        line-height: 28px;
+        }
    }
 
 }
 .Form_contact{
     padding: 6rem 5rem;
-   
     color: #403E3E;
     font-size: 0.8em;
     width: auto;
     margin-left: -25%;
-
+    @include telefono() {
+       margin: 0 auto;
+       padding: 1rem 1rem;
+       }
     .title_form{
         width: 65%;
         margin-right: 50%;
@@ -126,6 +164,10 @@ h2{
             font-size: 1.8rem;
             border-left: solid 5px $color_primario;
             padding-left: 20px;
+            @include telefono() {
+             
+           font-size: 1.7rem;
+                }
         }
 
 
@@ -185,23 +227,40 @@ h2{
 .section_text{
 
     background-color: $color_secundario;
-    height: 450px;
+    height: 500px;
+    font-family: $fuente_principal;
+    @include telefono() {
+        height: 600px;
+        }
 
 }
 .container_text{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 60px;
-    margin-right: 10%;
+   
+    @include telefono() {
+        margin: 10px;
+        padding: 40px 0 0;
+        
+       
+        }
 
 
     .content_text{
-       
+       width: 40%;
         height: auto;
         color: #EFEFEF;
-        padding: 80px 5px 20px 80px;
+        padding: 80px 0px 2px 0px;
         font-size: 24px;
-
+        
+        @include telefono() {
+            margin: 0 auto;
+            padding: 1rem 1rem;
+            font-size: 15px;
+            width: 100%;
+            }
 
         p{
         font-family: $fuente_principal;
@@ -226,6 +285,11 @@ h2{
     text-align: center;
     margin: 0 auto;
     margin-top: -2%;
+    @include telefono() {
+        width: 60%;
+        font-size: 1.1rem;
+        margin-top: 5%;
+        }
 
     a{
         text-decoration: none;
@@ -235,7 +299,7 @@ h2{
 }
 .section_galery{
     justify-content: center;
-    margin: 70px;
+    margin: 30px;
 
 
 
@@ -252,12 +316,22 @@ h2{
            width: 80%;
            height: 380px;
            margin-left: 10%;
+           
+           @include telefono() {
+       
+            width: 100%;
+            height: 300px;
+            margin: 0;
+            margin-bottom: -60px;
+            }
+
            }
 
        }
 
     .content_img_two{
         display: flex;
+        flex-wrap: wrap;
         justify-content:space-evenly;
         margin: 70px;
 
@@ -265,6 +339,13 @@ h2{
     img{
         width: 40%;
         height: 370px;
+        
+        @include telefono() {
+       
+            min-width: 215%;
+            margin: 10px;
+            height: 300px;
+            }
 
     }
 }
@@ -280,6 +361,12 @@ h2{
     img{
         width: 10%;
         padding: 15px;
+
+        @include telefono() {
+            width: 35%;
+            
+            }
+
     }
 }
 
