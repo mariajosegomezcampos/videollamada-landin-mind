@@ -1,0 +1,29 @@
+{
+  "name": "videollamada-landin-mind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariajosegomezcampos/videollamada-landin-mind.git"
+  },
+  "author": "mjgomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariajosegomezcampos/videollamada-landin-mind/issues"
+  },
+  "homepage": "https://github.com/mariajosegomezcampos/videollamada-landin-mind#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  
+  "browserslist":[
+    "> 1%",
+    "last 2 versions"
+   ]
+}
